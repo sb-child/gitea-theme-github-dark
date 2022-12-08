@@ -1,0 +1,214 @@
+@import url("/assets/css/theme-arc-green.css");
+.following.bar.light {
+  background: #161b22 none repeat scroll 0% 0%;
+  border-color: #0000;
+}
+footer {
+  opacity: 0.5;
+  transition: opacity 0.1s ease 0s;
+}
+footer:hover {
+  opacity: 0.9;
+}
+.dashboard.feeds .right.stackable.menu > .item.active, .dashboard.issues .right.stackable.menu > .item.active {
+  color: var(--color-primary);
+}
+.repository.file.list #repo-files-table tr {
+  background: var(--color-box-header);
+}
+.repository #clone-panel input {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.repository.file.list #repo-files-table thead th {
+  background: #161b22;
+}
+:root {
+  --color-body: #0d1117;
+  --color-box-header: #0d1117;
+  --color-box-body: #0d1117;
+  --color-active: #30363b;
+  --color-menu: #161b22;
+  --color-navbar: #161b22;
+  --color-footer: #0d1017;
+  --color-input-background: #13141a;
+  --color-diff-removed-row-bg: rgba(248, 81, 73, 0.15);
+  --color-diff-added-row-bg: rgba(46, 160, 67, 0.15);
+  --color-expand-button: rgba(56, 139, 253, 0.4);
+  --color-diff-inactive: rgba(24, 24, 26, 0.1);
+  --color-primary: #58a6ff;
+  --color-primary-dark-1: #3392ff;
+  --color-primary-dark-2: #6db1ff;
+  --color-primary-dark-3: #81bcff;
+  --color-primary-dark-4: #a4ceff;
+  --color-primary-dark-5: #bddcff;
+  --color-primary-dark-6: #d8eaff;
+  --color-primary-dark-7: #f8fbff;
+  --color-primary-light-1: #4f94e3;
+  --color-primary-light-2: #4483ca;
+  --color-primary-light-3: #3669a4;
+  --color-primary-light-4: #274b75;
+  --color-primary-light-5: #203c5b;
+  --color-primary-light-6: #101f2f;
+  --color-primary-light-7: #08101a;  
+  --color-primary-alpha-10: #58a6ff19;
+  --color-primary-alpha-20: #58a6ff33;
+  --color-primary-alpha-30: #58a6ff4b;
+  --color-primary-alpha-40: #58a6ff66;
+  --color-primary-alpha-50: #58a6ff80;
+  --color-primary-alpha-60: #58a6ff99;
+  --color-primary-alpha-70: #58a6ffb3;
+  --color-primary-alpha-80: #58a6ffcc;
+  --color-primary-alpha-90: #58a6ffe1;
+}
+.ui.grey.labels .label, .ui.ui.ui.grey.label {
+  background-color: rgb(45, 45, 45);
+}
+.ui.red.labels .label, .ui.ui.ui.red.label {
+  background-color: #f85149;
+}
+.ui.secondary.menu .item {
+  transition: color,background 0.1s ease 0s;
+}
+.feeds .list ul li.private {
+  background: #161b22 none repeat scroll 0% 0%;
+}
+.ui.green.button, .ui.green.buttons .button {
+  background-color: #238636;
+}
+.ui.green.button:hover, .ui.green.buttons .button:hover {
+  background-color: #2ea043;
+}
+.ui.red.button, .ui.red.buttons .button {
+  background-color: #d23636;
+}
+.ui.red.button:hover, .ui.red.buttons .button:hover {
+  background-color: #e35353;
+}
+.ui.green.label, .ui.green.labels .label, .ui.basic.green.label {
+  background-color: #238636 !important;
+}
+.tag-code, .tag-code td {
+  background: rgba(56, 139, 253, 0.15) !important;
+}
+.tag-code td.lines-num {
+  background-color: rgba(56, 139, 253, 0.4) !important;
+}
+table.chroma > tbody {
+  background-color: #0d1117;
+}
+tr.same-code {
+  background-color: #0d1117;
+}
+.lines-code {
+  background-color: var(--color-diff-inactive);
+}
+tr.add-code > td:nth-child(1) {
+  background-color: rgba(63, 185, 80, 0.3);
+}
+tr.add-code > td:nth-child(2) {
+  background-color: rgba(63, 185, 80, 0.3);
+}
+tr.del-code > td:nth-child(1) {
+  background-color: rgba(248, 81, 73, 0.3);
+}
+tr.del-code > td:nth-child(2) {
+  background-color: rgba(248, 81, 73, 0.3);
+}
+.ui.primary.sha.label {
+  background-color: var(--color-primary-alpha-30) !important;
+}
+.lines-num.lines-num-old.del-code, .lines-type-marker.lines-type-marker-old.del-code, .lines-num.lines-num-old, .lines-type-marker.lines-type-marker-old {
+  background-color: rgba(248, 81, 73, 0.3) !important;
+}
+.lines-num.lines-num-new.add-code, .lines-type-marker.lines-type-marker-new.add-code, .lines-num.lines-num-new, .lines-type-marker.lines-type-marker-new {
+  background-color: rgba(63, 185, 80, 0.3) !important;
+}
+.repository .diff-file-box .code-diff tbody tr .lines-type-marker {
+  padding-right: 8px !important;
+}
+@media only screen and (min-width: 768px){
+  .issue .ui.segment.metas {
+    position: sticky;
+    top: 25px;
+    max-height: 100vh;
+    overflow: scroll;
+    padding-bottom: 40px;
+  }
+}
+.issue-item-top-row .ui.label {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0.2em 0.5em;
+  opacity: 0.8;
+  transition: opacity 0.1s ease 0s;
+}
+.issue-item-top-row .ui.label:hover {
+  opacity: 1.0;
+}
+::-moz-selection { /* Code for Firefox */
+  background: #5e96bb;
+}
+::selection {
+  background: #5e96bb;
+}
+.feeds .list .repo-owner-name-list .item-name {
+  max-width: 90% !important;
+}
+del {
+  opacity: .7;
+}
+h1 > del {
+  text-decoration-thickness: 5px;
+}
+h2 > del {
+  text-decoration-thickness: 5px;
+}
+h3 > del {
+  text-decoration-thickness: 3px;
+}
+h4 > del {
+  text-decoration-thickness: 2px;
+}
+h5 > del {
+  text-decoration-thickness: 1px;
+}
+h6 > del {
+  text-decoration-thickness: 1px;
+}
+.ui.message.unicode-escape-prompt {
+  opacity: .5;
+}
+.ui.message.unicode-escape-prompt:hover {
+  opacity: 1.0;
+}
+div.ui.secondary.vertical.filter.menu {
+  border: #161b22 solid 8px;
+  border-radius: 10px;
+}
+.ui.basic.primary.button, .ui.basic.primary.buttons .button, .ui.primary.button, .ui.primary.buttons .button {
+  background-color: #1f6feb !important;
+}
+.ui.basic.primary.button:hover, .ui.basic.primary.buttons .button:hover, .ui.primary.button:hover, .ui.primary.buttons .button:hover {
+  background-color: var(--color-primary-dark-1) !important;
+}
+.feeds .list ul li .repo-list-link .octicon-mirror, .feeds .list ul li .repo-list-link .octicon-repo {
+  margin-right: 3px;
+}
+.repo-title > a:nth-child(4) {
+  font-weight: bold;
+}
+.ui.repo-topic.large.label.topic, .ui.small.label.topic {
+  background: #13233a;
+  color: #58a6ff;
+  border-radius: 10px;
+}
+.repository.file.list #repo-files-table tr:hover {
+  background-color: #161b22;
+}
+.repository.file.list #repo-files-table tbody .svg.octicon-file-directory-fill, .repository.file.list #repo-files-table tbody .svg.octicon-file-submodule {
+  color: unset;
+}
+.ui.attached.table.unstackable.segment {
+  border-radius: 0 0 5px;
+}
