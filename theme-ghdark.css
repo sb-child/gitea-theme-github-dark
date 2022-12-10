@@ -212,3 +212,9 @@ div.ui.secondary.vertical.filter.menu {
 .ui.attached.table.unstackable.segment {
   border-radius: 0px 0px 5px 5px;
 }
+.ui.tertiary.button {
+  color: #58a6ff;
+}
+.ui.tertiary.button:hover {
+  color: #8bc1ff;
+}
