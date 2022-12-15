@@ -192,7 +192,7 @@ div.ui.secondary.vertical.filter.menu {
 .ui.basic.primary.button:hover, .ui.basic.primary.buttons .button:hover, .ui.primary.button:hover, .ui.primary.buttons .button:hover {
   background-color: var(--color-primary-dark-1) !important;
 }
-.feeds .list ul li .repo-list-link .octicon-mirror, .feeds .list ul li .repo-list-link .octicon-repo {
+.feeds .list ul li .repo-list-link .svg {
   margin-right: 3px;
 }
 .repo-title > a:nth-child(4) {
