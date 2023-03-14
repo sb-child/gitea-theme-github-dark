@@ -218,3 +218,7 @@ div.ui.secondary.vertical.filter.menu {
 .ui.tertiary.button:hover {
   color: #8bc1ff;
 }
+#diff-file-tree {
+  top: 70px !important;
+  max-height: calc(100vh - 70px) !important;
+}
