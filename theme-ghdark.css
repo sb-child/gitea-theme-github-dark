@@ -31,7 +31,7 @@ footer:hover {
   --color-menu: #010409;
   --color-navbar: #010409;
   --color-nav-bg: #010409;
-  --color-footer: #0d1017;
+  --color-footer: #0d1117;
   --color-header-wrapper: #010409;
   --color-input-background: #13141a;
   --color-diff-removed-row-bg: rgba(248, 81, 73, 0.15);
@@ -90,11 +90,32 @@ footer:hover {
   border: 1px solid var(--color-secondary);
   color: var(--color-text-muted);
 }
+.tippy-box {
+  background-color: var(--color-text-muted) !important;
+}
+/* .tippy-svg-arrow-outer {
+  fill:var(--color-text-muted) !important;
+} */
+.tippy-svg-arrow-inner {
+  fill:var(--color-text-muted) !important;
+}
 .ui.segment, .ui.segments, .ui.attached.segment {
   background: var(--color-box-header);
 }
 .repository.file.list #repo-files-table tr:hover {
   background-color: var(--color-box-body);
+}
+.repository.new.issue .comment.form .content::after {
+    border-right-color: var(--color-body);
+}
+.ui.segment .ui.tabular.menu .active.item, .ui.segment .ui.tabular.menu .active.item:hover {
+  background: var(--color-body);
+}
+markdown-toolbar svg {
+  color: var(--color-text-muted);
+}
+markdown-toolbar svg:hover {
+  color: var(--color-primary);
 }
 .ui.tabular.menu .active.item {
   margin-bottom: -1px;
