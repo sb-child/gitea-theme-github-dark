@@ -1,6 +1,6 @@
 @import url("/assets/css/theme-arc-green.css");
 .following.bar.light {
-  background: #161b22 none repeat scroll 0% 0%;
+  background: #010409 none repeat scroll 0% 0%;
   border-color: #0000;
 }
 footer {
@@ -21,17 +21,18 @@ footer:hover {
   overflow: hidden;
 }
 .repository.file.list #repo-files-table thead th {
-  background: #161b22;
+  background-color: var(--color-box-body);
 }
 :root {
   --color-body: #0d1117;
   --color-box-header: #0d1117;
-  --color-box-body: #0d1117;
+  --color-box-body: #161b22;
   --color-active: #30363b;
-  --color-menu: #161b22;
-  --color-navbar: #161b22;
-  --color-nav-bg: #161b22;
-  --color-footer: #0d1017;
+  --color-menu: #010409;
+  --color-navbar: #010409;
+  --color-nav-bg: #010409;
+  --color-footer: #0d1117;
+  --color-header-wrapper: #010409;
   --color-input-background: #13141a;
   --color-diff-removed-row-bg: rgba(248, 81, 73, 0.15);
   --color-diff-added-row-bg: rgba(46, 160, 67, 0.15);
@@ -61,6 +62,63 @@ footer:hover {
   --color-primary-alpha-70: #58a6ffb3;
   --color-primary-alpha-80: #58a6ffcc;
   --color-primary-alpha-90: #58a6ffe1;
+  --color-secondary: #30363d;
+  --color-text-muted: #7d8590;
+}
+.ui.menu {
+  margin: 0px;
+}
+.navbar-left {
+  flex: 1 1 auto;
+}
+#navbar {
+  min-height: 64px;
+}
+.navbar-right {
+  flex: 0 1 auto;
+  padding-right: 11px;
+}
+.ui.secondary.menu {
+  margin-left: 0;
+  margin-right: 0;
+}
+.labels > .ui.label {
+  height: 20px;
+  line-height: 0.6;
+  border-radius: 10px !important;
+  background-color: transparent;
+  border: 1px solid var(--color-secondary);
+  color: var(--color-text-muted);
+}
+.tippy-box {
+  background-color: var(--color-text-muted) !important;
+}
+/* .tippy-svg-arrow-outer {
+  fill:var(--color-text-muted) !important;
+} */
+.tippy-svg-arrow-inner {
+  fill:var(--color-text-muted) !important;
+}
+.ui.segment, .ui.segments, .ui.attached.segment {
+  background: var(--color-box-header);
+}
+.repository.file.list #repo-files-table tr:hover {
+  background-color: var(--color-box-body);
+}
+.repository.new.issue .comment.form .content::after {
+    border-right-color: var(--color-body);
+}
+.ui.segment .ui.tabular.menu .active.item, .ui.segment .ui.tabular.menu .active.item:hover {
+  background: var(--color-body);
+}
+markdown-toolbar svg {
+  color: var(--color-text-muted);
+}
+markdown-toolbar svg:hover {
+  color: var(--color-primary);
+}
+.ui.tabular.menu .active.item {
+  margin-bottom: -1px;
 }
 .ui.grey.labels .label, .ui.ui.ui.grey.label {
   background-color: rgb(45, 45, 45);
@@ -72,7 +130,7 @@ footer:hover {
   transition: color,background 0.1s ease 0s;
 }
 .feeds .list ul li.private {
-  background: #161b22 none repeat scroll 0% 0%;
+  background: #010409 none repeat scroll 0% 0%;
 }
 .ui.green.button, .ui.green.buttons .button {
   background-color: #238636;
@@ -184,7 +242,7 @@ h6 > del {
   opacity: 1.0;
 }
 div.ui.secondary.vertical.filter.menu {
-  border: #161b22 solid 8px;
+  border: #010409 solid 8px;
   border-radius: 10px;
 }
 .ui.basic.primary.button, .ui.basic.primary.buttons .button, .ui.primary.button, .ui.primary.buttons .button {
@@ -204,9 +262,6 @@ div.ui.secondary.vertical.filter.menu {
   color: #58a6ff;
   border-radius: 10px;
 }
-.repository.file.list #repo-files-table tr:hover {
-  background-color: #161b22;
-}
 .repository.file.list #repo-files-table tbody .svg.octicon-file-directory-fill, .repository.file.list #repo-files-table tbody .svg.octicon-file-submodule {
   color: unset;
 }
@@ -218,8 +273,4 @@ div.ui.secondary.vertical.filter.menu {
 }
 .ui.tertiary.button:hover {
   color: #8bc1ff;
-}
-#diff-file-tree {
-  top: 70px !important;
-  max-height: calc(100vh - 70px) !important;
 }
