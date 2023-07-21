@@ -30,6 +30,7 @@ footer:hover {
   --color-active: #30363b;
   --color-menu: #161b22;
   --color-navbar: #161b22;
+  --color-nav-bg: #161b22;
   --color-footer: #0d1017;
   --color-input-background: #13141a;
   --color-diff-removed-row-bg: rgba(248, 81, 73, 0.15);
