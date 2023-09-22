@@ -12,11 +12,11 @@ Just for css preview, dom tree was modified.
 
 1. just copy `theme-ghdark.css` to
 
-/path/to/gitea`/custom/public/css/theme-ghdark.css`
+/path/to/gitea/`custom/public/assets/css/theme-ghdark.css`
 
 2. then modify 
 
-/path/to/gitea`/custom/conf/app.ini`
+/path/to/gitea/`custom/conf/app.ini`
 
 ```ini
 [ui]
