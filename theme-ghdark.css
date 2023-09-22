@@ -64,6 +64,7 @@ footer:hover {
   --color-primary-alpha-90: #58a6ffe1;
   --color-secondary: #30363d;
   --color-text-muted: #7d8590;
+  --color-text: rgb(230, 237, 243);
 }
 .ui.menu {
   margin: 0px;
