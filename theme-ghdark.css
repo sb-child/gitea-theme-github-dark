@@ -1,4 +1,5 @@
-@import url("/assets/css/theme-arc-green.css");
+@import url("/assets/css/index.css");
+
 .following.bar.light {
   background: #010409 none repeat scroll 0% 0%;
   border-color: #0000;
@@ -24,6 +25,7 @@ footer:hover {
   background-color: var(--color-box-body);
 }
 :root {
+  color-scheme: dark;
   --color-body: #0d1117;
   --color-box-header: #0d1117;
   --color-box-body: #161b22;
@@ -33,7 +35,7 @@ footer:hover {
   --color-nav-bg: #010409;
   --color-footer: #0d1117;
   --color-header-wrapper: #010409;
-  --color-input-background: #13141a;
+  --color-input-background: #010409;
   --color-diff-removed-row-bg: rgba(248, 81, 73, 0.15);
   --color-diff-added-row-bg: rgba(46, 160, 67, 0.15);
   --color-expand-button: rgba(56, 139, 253, 0.4);
@@ -65,6 +67,18 @@ footer:hover {
   --color-secondary: #30363d;
   --color-text-muted: #7d8590;
   --color-text: rgb(230, 237, 243);
+  --color-text-light: rgb(230, 237, 243);
+  --color-input-text: rgb(230, 237, 243);
+  --color-error-text: rgb(248, 81, 73);
+  --color-error-border: rgba(248, 81, 73, 0.5);
+  --color-nav-hover-bg: rgba(177, 186, 196, 0.12);
+  --color-hover: rgba(177, 186, 196, 0.12);
+  --color-button: #21262d;
+  --color-secondary-alpha-60: #161b22;
+  --color-secondary-alpha-50: #21262d;
+  --color-label-bg: rgb(33, 38, 45);
+  --color-label-hover-bg: rgba(177, 186, 196, 0.12);
+  --color-label-text: rgb(230, 237, 243);
 }
 .ui.menu {
   margin: 0px;
@@ -92,6 +106,7 @@ footer:hover {
   color: var(--color-text-muted);
 }
 .tippy-box {
+  color: var(--color-text);
   background-color: var(--color-text-muted) !important;
 }
 /* .tippy-svg-arrow-outer {
@@ -274,4 +289,50 @@ div.ui.secondary.vertical.filter.menu {
 }
 .ui.tertiary.button:hover {
   color: #8bc1ff;
+}
+.ui.selection.dropdown {
+  background: #0d1117;
+}
+.ui.selection.dropdown:hover {
+  background: #0d1117;
+}
+.ui.error.header {
+  background: unset !important;
+}
+.ui.error.message, .ui.attached.error.message, .ui.red.message, .ui.attached.red.message, .ui.negative.message, .ui.attached.negative.message {
+  background: rgba(248, 81, 73, 0.1);
+}
+.ui.modal > .header {
+  color: var(--color-text);
+}
+.ui.modal > .actions, .ui.modal .content + .actions, .ui.modal .content + form > .actions {
+  background: var(--color-body);
+}
+.ui.button, .ui.button:focus {
+  border: 1px solid rgba(238, 244, 250, 0.105);
+}
+.ui.button:hover {
+    background: var(--color-active);
+    border: 1px solid rgba(238, 244, 250, 0.48);
+}
+.small-menu-items .item {
+  background: var(--color-body) !important;
+}
+.ui.secondary.pointing.menu .active.item, .ui.secondary.pointing.menu .active.item:hover, .ui.secondary.pointing.menu .dropdown.item:hover, .ui.secondary.pointing.menu a.item:hover {
+  color: var(--color-text);
+}
+.ui.list > .item a, .ui.list .list > .item a {
+  overflow: auto;
+}
+
+.repo-buttons .ui.labeled.button > .label {
+  border-color: rgba(238, 244, 250, 0.105);
+}
+.repo-buttons .ui.labeled.button > .label:hover {
+  color: var(--color-text);
+  background: var(--color-active);
+}
+.ui.basic.buttons .button:hover, .ui.basic.button:hover {
+  color: var(--color-text);
+  background: var(--color-active);
 }
