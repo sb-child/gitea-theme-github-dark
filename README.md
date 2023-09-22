@@ -4,7 +4,7 @@ a gitea theme that looks like github-dark
 
 ## preview
 
-![图片](https://user-images.githubusercontent.com/55868015/206542054-321b6c3f-3068-4d87-9655-6ee0763db9f4.png)
+![图片](https://github.com/sb-child/gitea-theme-github-dark/assets/55868015/2dd4033f-ebcd-4fdf-af2f-fcd16cce3740)
 
 Just for css preview, dom tree was modified.
 
