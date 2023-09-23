@@ -25,6 +25,7 @@ footer:hover {
 :root {
   color-scheme: dark;
   --color-body: #0d1117;
+  --color-card: #0d1117;
   --color-box-header: #0d1117;
   --color-box-body: #161b22;
   --color-active: #30363b;
@@ -335,5 +336,22 @@ div.ui.secondary.vertical.filter.menu {
   color: var(--color-text);
   background: var(--color-active);
 }
+.user.profile .ui.card {
+  border-radius: 12px;
+}
+
+.ui.secondary.menu .dropdown.item > .menu, .ui.text.menu .dropdown.item > .menu {
+  padding: 5px;
+  border-radius: 9px;
+}
+
+.ui.menu .ui.dropdown.item .menu .item {
+  border-radius: 5px;
+}
+
+.user-menu > .item {
+  border-radius: 5px !important;
+}
 
 @import url("/assets/css/index.css");
+
