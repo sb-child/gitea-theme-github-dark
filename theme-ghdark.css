@@ -385,5 +385,9 @@ div.ui.secondary.vertical.filter.menu {
   color: rgb(137, 149, 162);
 }
 
+.code-view .lines-num:hover {
+color: rgb(255, 255, 255) !important;
+}
+
 @import url("/assets/css/index.css");
 
