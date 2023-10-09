@@ -353,5 +353,37 @@ div.ui.secondary.vertical.filter.menu {
   border-radius: 5px !important;
 }
 
+.chroma .nx {
+  color: rgb(191, 212, 234);
+}
+
+.chroma .s, .chroma .s1, .chroma .s2 {
+  color: rgb(48, 200, 24);
+}
+
+.chroma .nf {
+  color: rgb(251, 118, 174);
+}
+
+.chroma .kt {
+  color: rgb(107, 141, 242);
+}
+
+.chroma .nb {
+  color: rgb(64, 153, 255);
+}
+
+.chroma .k, .chroma .kc, .chroma .kd, .chroma .kn, .chroma .kp, .chroma .kr {
+  color: rgb(244, 111, 124);
+}
+
+.chroma .m, .chroma .mb, .chroma .mf, .chroma .mh, .chroma .mi, .chroma .mo {
+  color: rgb(23, 202, 202);
+}
+
+.chroma .c, .chroma .c1, .chroma .ch {
+  color: rgb(137, 149, 162);
+}
+
 @import url("/assets/css/index.css");
 
