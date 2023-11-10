@@ -391,7 +391,7 @@ div.ui.secondary.vertical.filter.menu {
   color: rgb(255, 255, 255) !important;
 }
 
-.monaco-editor .margin, .monaco-editor .view-lines {
+.monaco-editor .margin-view-overlays, .monaco-editor-background {
   background-color: #0d1117 !important;
 }
 
