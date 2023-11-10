@@ -24,6 +24,7 @@ footer:hover {
 }
 :root {
   color-scheme: dark;
+  --is-dark-theme: true;
   --color-body: #0d1117;
   --color-card: #0d1117;
   --color-box-header: #0d1117;
@@ -79,6 +80,7 @@ footer:hover {
   --color-label-hover-bg: rgba(177, 186, 196, 0.12);
   --color-label-text: rgb(230, 237, 243);
   --color-caret: rgb(230, 237, 243);
+  --color-active-line: #222c40;
 }
 .ui.menu {
   margin: 0px;
@@ -386,8 +388,11 @@ div.ui.secondary.vertical.filter.menu {
 }
 
 .code-view .lines-num:hover {
-color: rgb(255, 255, 255) !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+.monaco-editor .margin, .monaco-editor .view-lines {
+  background-color: #0d1117 !important;
 }
 
 @import url("/assets/css/index.css");
-
