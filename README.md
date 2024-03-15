@@ -6,7 +6,6 @@ This Gitea theme mimics the appearance of GitHub's dark theme for a familiar and
 
 ![图片](https://github.com/sb-child/gitea-theme-github-dark/assets/55868015/2dd4033f-ebcd-4fdf-af2f-fcd16cce3740)
 
-This Gitea theme mimics the appearance of GitHub's dark theme for a familiar and visually pleasing experience.
 ## How to use
 
 1. Copy the theme-ghdark.css file to /path/to/gitea/custom/public/assets/css/theme-ghdark.css.
