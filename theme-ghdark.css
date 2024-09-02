@@ -132,11 +132,14 @@ footer:hover {
   --color-green-label: #238636;
   --color-green-label-hover: #2ea043;
   --color-fg-muted: #9198a1;
+  --color-secondary-dark-7: #9198a1;
   --color-button-border: #3d444d;
   --color-text-light-2: rgb(240, 246, 252);
   --color-input-border: #30363d;
   --color-input-border-hover: #30363d;
   --color-green-badge: #238636;
+  --color-markup-code-inline: #1e2329;
+  --color-markup-code-block: #151b23;
 }
 
 .overflow-menu-items > a > svg {
@@ -601,8 +604,12 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.file-view a {
+  text-decoration: underline;
+}
+
 a {
-  text-decoration: none !important;
+  text-decoration: none;
   transition: color 0.3s ease;
   -webkit-transition: color 0.3s ease;
   -moz-transition: color 0.3s ease;
@@ -693,7 +700,6 @@ input#repo-clone-url {
 }
 
 pre.code-block {
-  background: var(--color-secondary);
   margin: 20px auto;
   z-index: 0;
 }
