@@ -74,7 +74,7 @@ footer:hover {
   --color-card: #0d1117;
   --color-box-header: #0d1117;
   --color-box-body: #161b22;
-  --color-active: #30363b;
+  --color-active: #262c36;/*#30363b;*/
   --color-menu: #010409;
   --color-navbar: #010409;
   --color-nav-bg: #010409;
@@ -119,7 +119,7 @@ footer:hover {
   --color-error-border: rgba(248, 81, 73, 0.5);
   --color-nav-hover-bg: rgba(177, 186, 196, 0.12);
   --color-hover: rgba(177, 186, 196, 0.12);
-  --color-button: #21262d;
+  --color-button: #212830;/*#21262d;*/
   --color-secondary-alpha-60: #161b22;
   --color-secondary-alpha-50: #21262d;
   --color-label-bg: rgb(33, 38, 45);
@@ -131,6 +131,17 @@ footer:hover {
   --color-button-hover: #e35353;
   --color-green-label: #238636;
   --color-green-label-hover: #2ea043;
+  --color-fg-muted: #9198a1;
+  --color-button-border: #3d444d;
+  --color-text-light-2: rgb(240, 246, 252);
+  --color-input-border: #30363d;
+  --color-input-border-hover: #30363d;
+  --color-green-badge: #238636;
+}
+
+.overflow-menu-items > a > svg {
+  color: var(--color-fg-muted);
+  fill: var(--color-fg-muted);
 }
 .ui.menu {
   margin: 0px;
@@ -292,10 +303,10 @@ tr.del-code > td:nth-child(2) {
   opacity: 1;
 }
 ::-moz-selection {
-  background: var(--color-text-light-2) !important;
+  background: #1953ac !important;
 }
 ::selection {
-  background: var(--color-text-light-2) !important;
+  background: #1953ac !important;
 }
 .feeds .list .repo-owner-name-list .item-name {
   max-width: 90% !important;
@@ -416,7 +427,8 @@ div.ui.secondary.vertical.filter.menu {
 }
 
 .repo-buttons .ui.labeled.button > .label {
-  border-color: rgba(238, 244, 250, 0.105);
+  border: 1px solid var(--color-button-border);
+  border-color: var(--color-button-border);
 }
 .repo-buttons .ui.labeled.button > .label:hover {
   color: var(--color-text);
@@ -424,8 +436,22 @@ div.ui.secondary.vertical.filter.menu {
 }
 .ui.basic.buttons .button:hover,
 .ui.basic.button:hover {
+  border: 1px solid var(--color-button-border);
   color: var(--color-text);
   background: var(--color-active);
+}
+.ui.labeled.button > .button:hover + .label {
+  border-left-color: var(--color-button-border);
+}
+.ui.action.input .ui.ui.button {
+  border-left: 1px solid var(--color-button-border) !important;
+  border: 1px solid var(--color-button-border);
+}
+.ui.action.input:not([class*="left action"]) > input,
+.ui.action.input:not([class*="left action"]) > input:hover,
+.repository .clone-panel #repo-clone-url {
+  border: 1px solid var(--color-button-border);
+  border-right: 0px solid #00000000;
 }
 .user.profile .ui.card {
   border-radius: 12px;
@@ -590,8 +616,11 @@ a:hover {
 
 /* Buttons */
 .ui.button,
-.ui.button:focus {
-  border: 1px solid rgba(238, 244, 250, 0.105);
+.ui.button:focus,
+.ui.label,
+.ui.label:focus
+{
+  border: 1px solid var(--color-button-border);
   transition: background-color 0.3s ease, border-color 0.3s ease,
     color 0.3s ease;
   -webkit-transition: background-color 0.3s ease, border-color 0.3s ease,
@@ -606,7 +635,7 @@ a:hover {
 
 .ui.button:hover {
   background: var(--color-active);
-  border: 1px solid rgba(238, 244, 250, 0.48);
+  border: 1px solid var(--color-button-border);
 }
 
 .ui.primary.button,
